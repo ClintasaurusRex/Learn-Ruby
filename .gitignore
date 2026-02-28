@@ -56,7 +56,6 @@ yarn-debug.log*
 .vscode/settings.json
 
 # OS
-.DS_Store
 Thumbs.db
 
 # Coverage
