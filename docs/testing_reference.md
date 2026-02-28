@@ -101,7 +101,7 @@ expect([1, 2, 3]).to include(2)
 expect([1, 2, 3]).to include(1, 3)
 expect([1, 2, 3]).to contain_exactly(3, 1, 2)  # same elements, any order
 expect([1, 2, 3]).to match_array([3, 1, 2])     # same as contain_exactly
-expect([1, 2, 3]).to have(3).items              # needs shoulda-matchers
+expect([1, 2, 3].size).to eq(3)
 expect([]).to be_empty
 expect([1, 2, 3]).to all(be > 0)
 ```

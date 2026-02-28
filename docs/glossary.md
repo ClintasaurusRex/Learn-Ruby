@@ -113,9 +113,6 @@ Calls the same method in the parent class. Used in subclasses to extend (rather 
 **ActionController**  
 The base class for all Rails controllers. Handles request/response, before actions, redirects, rendering, params, sessions, and flash.
 
-**ActionRecord**  
-See: ActiveRecord.
-
 **ActiveRecord**  
 Rails' ORM (Object-Relational Mapper). Connects Ruby model classes to database tables and provides methods for querying and modifying data.
 
