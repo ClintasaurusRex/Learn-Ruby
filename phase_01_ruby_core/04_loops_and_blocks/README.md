@@ -31,9 +31,8 @@ end             ──►  1       puts i      ──►  0    end
            .reduce(0) { |sum, n|            .each_with_object({}) do |w, h|
                sum + n                          h[w.length] ||= []
              }          ──►  10               h[w.length] << w
-                                          end  ──►  {3=>["cat","ant"],
-                                                      3=>..., 2=>["be"..]}
-
+                                          end  ──►  {3=>["cat","bee","ant"],
+                                                      2=>["ox"]}
          YIELD
          ─────────────────────────────────────
          def run_it                          ← defines the method
@@ -186,7 +185,7 @@ Before moving on, confirm you can:
 
 | Mistake | Fix |
 |---------|-----|
-| `5.times { puts "hi" }` — forgetting the block variable | Add `\|i\|` if you need the index; it's optional if you don't |
+| `5.times { puts "hi" }` — forgetting the block variable | Add `|i|` if you need the index; it's optional if you don't |
 | Infinite `while` loop (forgetting to advance the counter) | Always mutate the condition variable inside the loop |
 | `reduce` without an initial value on an empty array | Pass `0` or `[]` as the first argument: `[].reduce(0, :+)` |
 | Using `each_with_object` but forgetting to return the object | The block's last expression is NOT the return value — `each_with_object` returns the object you pass in |
