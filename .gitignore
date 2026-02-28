@@ -1,0 +1,64 @@
+# Ruby
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+*.lock
+!Gemfile.lock
+
+# RSpec
+.rspec_status
+
+# Bundler
+.bundle/
+vendor/bundle/
+
+# IRB
+.irbrc
+
+# Pry
+.pryrc
+
+# Byebug
+.byebug_history
+
+# Rails
+log/
+tmp/
+*.sqlite3
+*.sqlite3-journal
+db/*.sqlite3
+db/*.sqlite3-journal
+public/system/
+public/uploads/
+config/master.key
+config/credentials.yml.enc
+/public/assets/
+/public/packs/
+/node_modules/
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# IDEs
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.vscode/settings.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+.simplecov
